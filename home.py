@@ -1,21 +1,16 @@
-import math
 import streamlit as st
 
-def area_rectangle(w, h):
-    return w*h
-
-def area_circle(r):
-    return math.pi*r**2
-
-print('ok')
-
-st.title("Homepage")
+st.title("Shape calculator")
 st.write("this is the calculator app.")
 
-radius = st.text_input("Enter radius")
-submit_btn = st.button("submit")
-if submit_btn:
-    st.write(area_circle(int(radius)))
+st.page_link("pages/1_cal_circle.py", label="Circle")
+st.page_link("pages/2_cal_rectangle.py", label="Rectangle")
+st.page_link("pages/3_profile.py", label="Profile")
+
+from streamlit_chat import message
+
+message("My message") 
+message("Hello bot!", is_user=True)  # align's the message to the right
 
 # height = int(input("height :"))
 # weight = int(input("weight :" ))
