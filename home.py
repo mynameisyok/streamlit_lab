@@ -7,7 +7,7 @@ def area_rectangle(w, h):
 def area_circle(r):
     return math.pi*r**2
 
-
+print('ok')
 
 st.title("Homepage")
 st.write("this is the calculator app.")
