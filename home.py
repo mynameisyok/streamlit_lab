@@ -1,5 +1,10 @@
 import streamlit as st
 
+st.set_page_config(
+    page_title="้home",
+    page_icon="home"
+)
+
 st.title("Shape calculator")
 st.write("this is the calculator app.")
 
