@@ -3,14 +3,20 @@ import streamlit as st
 st.title("Shape calculator")
 st.write("this is the calculator app.")
 
-st.page_link("pages/1_cal_circle.py", label="Circle")
-st.page_link("pages/2_cal_rectangle.py", label="Rectangle")
-st.page_link("pages/3_profile.py", label="Profile")
+st.page_link("pages/1_profile.py", label="Profile")
+col1, col2, col3 = st.columns(3)
 
-from streamlit_chat import message
+with col1:
+    st.page_link("pages/2_cal_circle.py", label="Circle", icon="🔵")
+    st.page_link("pages/3_cal_rectangle.py", label="Rectangle", icon="🟥")
 
-message("My message") 
-message("Hello bot!", is_user=True)  # align's the message to the right
+with col2:
+    st.page_link("pages/4_cal_ellipse.py", label="Ellipse", icon="🥚")
+    st.page_link("pages/5_cal_square.py", label="Square", icon="🟩")
+
+with col3:
+    st.page_link("pages/6_cal_trapezoid.py", label="Trapezoid", icon="〰️")
+    st.page_link("pages/7_cal_triangle.py", label="Triangle", icon="🔺")
 
 # height = int(input("height :"))
 # weight = int(input("weight :" ))
