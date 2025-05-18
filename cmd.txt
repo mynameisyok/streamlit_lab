@@ -1,0 +1,19 @@
+conda create --name lab3004 python=3.13
+conda activate lab3004
+conda deactivate
+
+python PythonPractice.py
+streamlit run PythonPractice.py
+
+echo "# streamlit_lab" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/mynameisyok/streamlit_lab.git
+git push -u origin main
+
+git remote add origin https://github.com/mynameisyok/streamlit_lab.git
+git branch -M main
+git push -u origin main
+
